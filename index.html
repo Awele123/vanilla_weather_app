@@ -8,57 +8,154 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+      .maincontainer {
+        position: relative;
+        display: flex;
+        gap: 0px;
+        max-height: 400px;
+        margin: 100px 0 auto;
+        justify-content: center;
+      }
+      .leftcontainer {
+        text-align: center;
+        background-color: #2da7d5;
+        color: white;
+        border: 1px solid fff;
+        border-radius: 20px;
+        padding: 0px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        clip-path: inset(-5px 0px -5px -5px);
+      }
+      .container {
+        position: relative;
+        display: flex;
+        gap: 0px;
+        border: 1px solid fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        border-radius: 40px;
+        border-left: 0px;
+        width: 500px;
+        background-color: white;
+      }
+      .Holders {
+        margin-top: 20px;
+        margin-right: 0px;
+        position: absolute;
+        justify-content: center;
+      }
+      .values {
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 0px;
+      }
+      form {
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        width: 200px;
+        padding: 0px;
+      }
+      ul {
+        list-style: none;
+        line-height: 50px;
+      }
+      .humid > ul > li > img,
+      .feels > ul > li > img {
+        max-width: 50px;
+        max-height: 50px;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+      .temp {
+        border: 1px solid #3f8ccf;
+        border-radius: 20px;
+        background-color: #3f8ccf;
+        width: 200px;
+        margin: 0px 30px 30px 30px;
+      }
+      .search-form-input {
+        background-color: aliceblue;
+        border: none;
+
+        border-radius: 6px;
+        width: 60%;
+        margin-left: 30px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .search-form-button {
+        padding: 10px;
+        border: 1px solid #3f8ccf;
+        background-color: #3f8ccf;
+        color: white;
+        margin-left: 0px;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <input type="search" placeholder="Enter a city..." required />
-      <input type="submit" value="Search" />
-    </header>
     <div class="maincontainer">
+      <div class="leftcontainer">
+        <h2 class="day">Monday <br /></h2>
+        <p class="date">12 September 2024</p>
+        <img src="./weather.png" alt="weathericon" />
+        <h2 class="temp">77&deg;C</h2>
+      </div>
       <div class="container">
+        <header>
+          <form>
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              required
+              class="search-form-input"
+            />
+            <input type="submit" value="Search" class="search-form-button" />
+          </form>
+        </header>
         <div class="Holders">
           <ul>
             <li>City</li>
             <li>Temp</li>
             <li>Pressure</li>
           </ul>
+
+          <div class="humid">
+            <ul>
+              <li>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/4907/4907228.png"
+                  alt="Humidity image"
+                />
+              </li>
+              <li class="humidvalue">45&deg;C</li>
+            </ul>
+          </div>
         </div>
+
         <div class="values">
           <ul>
             <li class="cityvalue">France</li>
             <li class="tempvalue">22&deg;C</li>
             <li class="pressurevalue">1112</li>
           </ul>
-        </div>
-      </div>
-      <div class="container1">
-        <div class="humid">
-          <i class="bi bi-moisture"></i> <br />
-          <p class="humidvalue">45&deg;C</p>
-          <div>
-            <p class="feelslikeicon">##</p>
-            <p>67&deg;C</p>
+          <div class="feels">
+            <ul>
+              <li>
+                <img src="./thermometer.png" alt="Thermometer" />
+              </li>
+              <li>67&deg;C</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="leftcontainer">
-        <p>
-          Monday <br />
-          12 September 2024
-        </p>
-        <p class="weathericon">☁️</p>
-        <p class="temp">77&deg;C</p>
-      </div>
     </div>
-    <footer>
-      This App was coded by
-      <a href="https://www.shecodes.io/graduates/101612-awele-nwabuzor"
-        >Awele</a
-      >
-      and hosted on
-      <a href="https://github.com/Awele123/vanilla_weather_app.git">Github</a>
-      and the website is hosted on
-      <a href="https://vanilla-weather-app-five.vercel.app/">Vercel</a>
-    </footer>
   </body>
 </html>
