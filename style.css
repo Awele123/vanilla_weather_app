@@ -1,0 +1,123 @@
+    body {
+        background-color: whitesmoke;
+        font-family: "Stylish", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .maincontainer {
+        position: relative;
+        display: flex;
+        gap: 0px;
+        max-height: 400px;
+        margin: 100px 0 auto;
+        justify-content: center;
+    }
+
+    .leftcontainer {
+        position: relative;
+        z-index: 2;
+        left: 10px;
+        text-align: center;
+        background-color: #2da7d5;
+        color: white;
+        border: 1px solid fff;
+        border-radius: 20px;
+        padding: 0px;
+        width: 230px;
+        height: 350px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        clip-path: inset(-5px 0px -5px -5px);
+    }
+
+    .container {
+        display: flex;
+        left: 20px;
+        gap: 0px;
+        width: 400px;
+        max-height: 350px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border: 1px solid fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        border-left: 0px;
+        background-color: white;
+    }
+
+    .day {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .date {
+        margin-top: 2px;
+        font-size: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        max-width: 200px;
+        width: 200px;
+        height: 180px;
+        padding: 0px;
+    }
+
+    .temp {
+        font-size: 30px;
+        border: 1px solid #3f8ccf;
+        border-radius: 20px;
+        background-color: #3f8ccf;
+        justify-content: center;
+        margin: 0px 30px 30px 30px;
+    }
+
+    form {
+        position: relative;
+        max-width: 300px;
+    }
+
+    .search-form-input {
+        background-color: aliceblue;
+        border: none;
+        width: 280px;
+        margin-top: 20px;
+        border-radius: 6px;
+        margin-left: 20px;
+        padding-right: 0px;
+        padding-left: 60px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .search-form-button {
+        position: absolute;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #3f8ccf;
+        background-color: #3f8ccf;
+        color: white;
+        margin-top: 20px;
+        margin-left: 6px;
+        border-radius: 10px;
+    }
+
+    .Holders {
+        margin-top: 60px;
+        margin-right: 0px;
+        position: absolute;
+        justify-content: center;
+    }
+
+    .values {
+        justify-content: center;
+        margin-top: 60px;
+        position: absolute;
+        margin-left: 270px;
+    }
+
+    ul {
+        list-style: none;
+        line-height: 50px;
+    }
