@@ -1,3 +1,7 @@
+
+    a{
+        color:#2da7d5 ;
+    }
     body {
         background-color: whitesmoke;
         font-family: "Stylish", serif;
@@ -26,7 +30,7 @@
         padding: 0px;
         width: 230px;
         height: 350px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 5px rgba(21, 21, 21, 0.8);
         clip-path: inset(-5px 0px -5px -5px);
     }
 
@@ -39,7 +43,7 @@
         margin-top: 8px;
         margin-bottom: 8px;
         border: 1px solid fff;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 5px rgba(21, 21, 21, 0.8);
         border-radius: 20px;
         border-left: 0px;
         background-color: white;
@@ -74,6 +78,7 @@
  }
     .temp {
         font-size: 30px;
+        font-weight: 600;
     }
 .tempicon{
     position: relative;
@@ -96,10 +101,9 @@
         width: 280px;
         margin-top: 20px;
         border-radius: 6px;
+        border-bottom: #3f8ccf;
         margin-left: 20px;
-        padding-right: 0px;
-        padding-left: 60px;
-        padding: 10px;
+        padding: 10px 6px 10px 10px;
         font-size: 16px;
     }
 
@@ -132,4 +136,18 @@
         list-style: none;
         line-height: 50px;
     }
-    
+    footer{
+        position: relative;
+        right: 300px;
+        max-width:400px;
+        max-height: 400px;
+        text-align: center;
+        margin-top:auto;
+        padding: 40px 0px 0px 0px;
+        color: rgb(0,0,0,0.3);
+        flex: none;
+
+        
+        
+
+    }
