@@ -1,8 +1,9 @@
 let nowday = document.querySelector("#day");
 let month = document.querySelector("#month");
-let newday = document.querySelector("#newday");
+let date = document.querySelector("#date");
 let year = document.querySelector("#year")
 let currentDate = new Date();
+
 let days = [
   "Sunday",
   "Monday",
@@ -17,8 +18,8 @@ let months = [
     "February","March","April","May","June","July","August","September","October","November","December"
 
 ]
-day.innerHTML = days[currentDate.getDay()];
-newday.innerHTML= currentDate.getDay();
+nowday.innerHTML = days[currentDate.getDay()];
+date.innerHTML = currentDate.getDate();
 month.innerHTML = months[currentDate.getMonth()]; 
 year.innerHTML = currentDate.getFullYear();
 
