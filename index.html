@@ -16,10 +16,16 @@
   <body>
     <div class="maincontainer">
       <div class="leftcontainer">
-        <h2 class="day">Monday <br /></h2>
-        <p class="date">12 September 2024</p>
+        <h2 class="day" id="day"></h2>
+        <span class="date" id="newday"></span>
+        <span id="month"></span>
+        <span id="year"></span>
         <img src="./weather.png" alt="weathericon" />
-        <h2 class="temp">77&deg;C</h2>
+        <p class="description" id="description"></p>
+        <div class="tempicon">
+          <div class="temp" id="temp">77</div>
+          <div class="unit">&deg;C</div>
+        </div>
       </div>
       <div class="container">
         <header>
@@ -38,16 +44,16 @@
         <div class="Holders">
           <ul>
             <li>CITY</li>
-            <li>TEMP</li>
+            <li>HUMIDITY</li>
             <li>PRESSURE</li>
           </ul>
         </div>
 
         <div class="values">
           <ul>
-            <li class="cityvalue" id="city">FRANCE</li>
-            <li class="tempvalue">22&deg;C</li>
-            <li class="pressurevalue">1112</li>
+            <li class="cityvalue" id="city"></li>
+            <div class="humidvalue" id="humid"></div>
+            <div class="pressurevalue" id="pressure"></div>
           </ul>
         </div>
       </div>
